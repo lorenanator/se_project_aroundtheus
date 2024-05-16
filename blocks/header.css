@@ -9,3 +9,10 @@
   border-width: 1px;
   border-block-color: #545454;
 }
+
+@media screen and (max-width: 480px) {
+  .header__image {
+    width: 126px;
+    height: 24px;
+  }
+}

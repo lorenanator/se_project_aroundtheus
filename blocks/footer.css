@@ -3,3 +3,14 @@
   color: #545454;
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-bottom: 36px;
+  }
+
+  .footer__description {
+    margin: auto;
+    padding-bottom: 36px;
+  }
+}

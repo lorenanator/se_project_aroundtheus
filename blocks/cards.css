@@ -4,5 +4,10 @@
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 67px;
-  /* fonts */
+}
+
+@media screen and (max-width: 800px) {
+  .cards {
+    margin-top: 51px;
+  }
 }
