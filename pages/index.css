@@ -32,7 +32,7 @@
 
   .profile__add-button {
     margin: 0;
-    width: 100%;
+    width: 282px;
   }
 
   .profile__title {
@@ -41,7 +41,25 @@
     line-height: 1.2;
   }
 
+  .footer {
+    margin-bottom: 36px;
+  }
+
   .footer__description {
     margin: auto;
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page__section {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .cards {
+    margin-top: 51px;
   }
 }
