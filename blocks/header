@@ -1,0 +1,11 @@
+.header {
+  margin-top: 45px;
+  padding-bottom: 41px;
+  border-style: solid;
+  border-bottom-width: thin;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  border-width: 1px;
+  border-block-color: #545454;
+}
