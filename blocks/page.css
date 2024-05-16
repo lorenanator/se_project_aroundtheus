@@ -1,3 +1,185 @@
 .page {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__section {
+  max-width: 880px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 45px;
+  padding-bottom: 41px;
+  border-style: solid;
+  border-bottom-width: thin;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  border-width: 1px;
+  border-block-color: #545454;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 0;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.profile__info {
+  display: grid;
+  grid-template-areas:
+    "title button"
+    "description button";
+  grid-template-columns: minmax(auto, 373px) auto;
+  grid-gap: 9px 17px;
+  align-items: baseline;
+}
+
+.profile__title {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 22px;
+  margin-bottom: 7px;
+  grid-area: title;
+  text-wrap: nowrap;
+}
+
+.profile__edit-button {
+  background: transparent url(/images/edit\ button.svg) center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 22px;
+  grid-area: button;
+  border: thin;
+}
+
+.profile__add-button {
+  background: transparent url(/images/realaddbutton.svg) center no-repeat;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  border: thin;
+}
+
+.profile__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  margin-right: 30px;
+}
+
+.profile__description {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0;
+  grid-area: description;
+}
+
+.cards {
+  margin-top: 51px;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 51px;
+  padding-bottom: 36px;
+  /* fonts */
+}
+
+.card__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-gap: 20px 17px;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+}
+
+.card__description {
+  display: flex;
+  background-color: white;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__title {
+  max-width: 220px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card__like-button {
+  background: transparent url(../images/heart.svg) center no-repeat;
+  width: 20px;
+  height: 18px;
+  border: 0;
+}
+
+.footer__description {
+  color: #545454;
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile__description {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+
+  .profile__add-button {
+    margin: 0;
+    width: 100%;
+  }
 }
