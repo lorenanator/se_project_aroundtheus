@@ -23,10 +23,10 @@
   line-height: 48px;
   font-weight: 500;
   margin: 0;
-  padding-top: 22px;
   margin-bottom: 7px;
   grid-area: title;
   text-wrap: nowrap;
+  overflow: hidden;
 }
 
 .profile__edit-button {
@@ -35,7 +35,9 @@
   height: 24px;
   margin-top: 22px;
   grid-area: button;
-  border: thin;
+  border: 1px;
+  border-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {
@@ -43,22 +45,22 @@
 }
 
 .profile__add-button {
-  background-color: black;
+  background-color: transparent;
   background-image: url(../images/vector-1.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 150px;
   height: 50px;
-  border: thin;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
+  border-color: rgba(255, 255, 255, 1);
+  border-radius: 2px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
   background: transparent url(../images/GRAYbutton.svg) center no-repeat;
-  border-color: #545454;
+  border-color: rgba(255, 255, 255, 1);
+  opacity: 0.6;
 }
 
 .profile__image {
@@ -66,7 +68,7 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  background-position: center;
+  object-position: center;
   margin-right: 30px;
 }
 
@@ -76,6 +78,9 @@
   font-weight: 400;
   margin: 0;
   grid-area: description;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
@@ -109,5 +114,33 @@
     font-weight: 500;
     line-height: 1.14;
     font-family: "Inter", Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    padding-top: 42px;
+  }
+
+  .profile__image {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+
+  .profile__edit-button {
+    background: transparent url(../images/edit-mobile.svg) center no-repeat;
+    width: 18px;
+    height: 18px;
+    border-style: solid;
+  }
+
+  .profile__edit-button:hover {
+    opacity: 0.6;
+  }
+
+  .profile__description {
+    font-size: 14px;
+    line-height: 1.05;
   }
 }

@@ -1,16 +1,16 @@
 .footer__description {
-  font-size: 14px;
-  color: #545454;
+  font-size: 18px;
+  line-height: 1.21;
+  color: rgba(84, 84, 84, 1);
   margin-bottom: 60px;
 }
 
 @media screen and (max-width: 480px) {
-  .footer {
-    margin-bottom: 36px;
-  }
-
   .footer__description {
     margin: auto;
+    padding: 0 20px;
     padding-bottom: 36px;
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
