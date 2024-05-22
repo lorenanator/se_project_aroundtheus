@@ -28,3 +28,6 @@ The images for the project are found in the images folder which were orgiinally 
 - Google Browser / DevTools
 - TripleTen
 - Loom (for video)
+
+**Github**
+https://github.com/lorenanator/se_project_aroundtheus
