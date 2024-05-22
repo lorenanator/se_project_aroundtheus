@@ -53,13 +53,12 @@
   height: 50px;
   border-color: rgba(255, 255, 255, 1);
   border-radius: 2px;
+  border-style: solid;
   margin-left: auto;
   cursor: pointer;
 }
 
 .profile__add-button:hover {
-  background: transparent url(../images/GRAYbutton.svg) center no-repeat;
-  border-color: rgba(255, 255, 255, 1);
   opacity: 0.6;
 }
 
@@ -114,6 +113,7 @@
     font-weight: 500;
     line-height: 1.14;
     font-family: "Inter", Arial, sans-serif;
+    text-overflow: ellipsis;
   }
 }
 
@@ -125,7 +125,7 @@
   .profile__image {
     width: 120px;
     height: 120px;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 
   .profile__edit-button {

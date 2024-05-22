@@ -1,5 +1,7 @@
 # Project 3: Around The U.S.
 
+Video: https://www.loom.com/share/3f27572b725f41908b42fbe886a31762
+
 ### Overview
 
 - Intro
@@ -17,3 +19,12 @@ This project is a social media webpage / app view of a US traveler named Jacques
 **Images**
 
 The images for the project are found in the images folder which were orgiinally downloaded from the Figma project (above). The icons are in .svg format and the profile is in .jpeg.
+
+**Tools**
+
+- Figma
+- Google Fonts
+- VS Code
+- Google Browser / DevTools
+- TripleTen
+- Loom (for video)
