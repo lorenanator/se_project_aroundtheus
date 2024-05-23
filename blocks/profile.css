@@ -27,6 +27,7 @@
   grid-area: title;
   text-wrap: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .profile__edit-button {
@@ -53,6 +54,7 @@
   height: 50px;
   border-color: rgba(255, 255, 255, 1);
   border-radius: 2px;
+  border-width: 2px;
   border-style: solid;
   margin-left: auto;
   cursor: pointer;
