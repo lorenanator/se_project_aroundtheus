@@ -29,9 +29,3 @@
     margin: auto;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .page__section {
-    margin: auto;
-  }
-}
