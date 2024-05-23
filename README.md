@@ -30,4 +30,4 @@ The images for the project are found in the images folder which were orgiinally 
 - Loom (for video)
 
 **Github**
-https://github.com/lorenanator/se_project_aroundtheus
+https://lorenanator.github.io/se_project_aroundtheus/
