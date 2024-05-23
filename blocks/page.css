@@ -27,7 +27,6 @@
 @media screen and (max-width: 800px) {
   .page__section {
     margin: auto;
-    width: 100%;
     position: relative;
   }
 }
@@ -35,7 +34,6 @@
 @media screen and (max-width: 600px) {
   .page__section {
     margin: auto;
-    width: 100%;
     position: relative;
   }
 }
