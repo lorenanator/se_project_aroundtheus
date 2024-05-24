@@ -111,7 +111,6 @@
   .profile__title {
     font-size: 22px;
     line-height: 1.14;
-    text-overflow: ellipsis;
   }
 }
 
@@ -121,8 +120,6 @@
   }
 
   .profile__image {
-    width: 120px;
-    height: 120px;
     margin: 0 0 20px 0;
   }
 
