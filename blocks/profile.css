@@ -43,7 +43,7 @@
 }
 
 .profile__edit-button:hover {
-  background: transparent url(../images/editbutton-hover.svg) center no-repeat;
+  opacity: 0.6;
 }
 
 .profile__add-button {
@@ -128,10 +128,6 @@
     width: 18px;
     height: 18px;
     border-style: solid;
-  }
-
-  .profile__edit-button:hover {
-    opacity: 0.6;
   }
 
   .profile__description {
