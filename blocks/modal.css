@@ -6,9 +6,12 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal__opened {
+  display: flex;
 }
 
 .modal__container {
@@ -99,8 +102,12 @@
 
 @media screen and (max-width: 480px) {
   .modal__container {
-    width: 282px;
-    height: 322px;
+    margin-top: 123px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 22px 0 22px;
+    max-width: 282px;
+    max-height: 322px;
   }
 
   .modal__close {
@@ -113,5 +120,15 @@
   .modal__heading {
     font-size: 18px;
     line-height: 1.21;
+    margin-bottom: 75px;
+  }
+
+  .modal__title {
+    margin-bottom: 30px;
+  }
+
+  .modal__description {
+    margin-top: 0px;
+    margin-bottom: 48px;
   }
 }
