@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
 }
 
@@ -69,7 +69,7 @@
 .modal__form {
 }
 
-.modal__title {
+.modal__input:first-of-type {
   margin-bottom: 29px;
   border-radius: 1px;
   border-top: transparent;
@@ -78,7 +78,7 @@
   border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal__description {
+.modal__input:last-of-type {
   margin-top: 29px;
   margin-bottom: 48px;
   border-radius: 1px;
@@ -123,12 +123,21 @@
     margin-bottom: 75px;
   }
 
-  .modal__title {
+  .modal__input:first-of-type {
     margin-bottom: 30px;
   }
 
-  .modal__description {
+  .modal__input:last-of-type {
     margin-top: 0px;
     margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .modal__container {
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 123px;
+    max-width: 238px;
   }
 }
