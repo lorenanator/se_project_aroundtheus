@@ -140,4 +140,8 @@
     margin-top: 123px;
     max-width: 238px;
   }
+
+  .modal__close {
+    top: -40px;
+  }
 }
