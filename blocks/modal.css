@@ -100,6 +100,31 @@
   opacity: 80%;
 }
 
+.modal__container_type_image-preview {
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  max-width: 75vw;
+  max-height: 75vh;
+}
+
+.modal__caption {
+  margin: 0;
+  padding: 8px 0 0 0;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
 @media screen and (max-width: 480px) {
   .modal__container {
     margin-top: 123px;
