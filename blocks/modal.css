@@ -8,10 +8,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
 .modal_opened {
   display: flex;
+  opacity: 2;
+  visibility: visible;
 }
 
 .modal__container {
@@ -66,9 +71,6 @@
   line-height: 1.21;
 }
 
-.modal__form {
-}
-
 .modal__input:first-of-type {
   margin-bottom: 29px;
   border-radius: 1px;
@@ -105,6 +107,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  width: 75vw;
+  height: 75vh;
 }
 
 .modal__image {

@@ -29,7 +29,7 @@ const initialCards = [
 
 const editProfileBtn = document.querySelector("#profile-edit-btn");
 const profileEditModal = document.querySelector("#profile-edit-modal");
-const closeModalBtn = document.querySelector("#close-edit-btn");
+const profileCloseButton = document.querySelector("#close-edit-btn");
 const profileTitle = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
@@ -38,7 +38,7 @@ const profileDescriptionInput = document.querySelector(
 );
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const cardListElement = document.querySelector(".cards__list");
-const AddCardButton = document.querySelector(".profile__add-button");
+const addCardButton = document.querySelector(".profile__add-button");
 
 const cardTemplateContent =
   document.querySelector("#card-template").content.firstElementChild;
@@ -118,7 +118,7 @@ function handleAddCardSubmit(e) {
   const cardElement = getCardElement(newCardData);
   cardListElement.prepend(cardElement);
   closePopup(profileAddModal);
-  addCardForm.requestFullscreen();
+  addCardForm.reset();
 }
 
 /*Event Listeners */
@@ -126,12 +126,14 @@ function handleAddCardSubmit(e) {
 editProfileBtn.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal_opened");
+  openModal(profileEditModal);
 });
 
-AddCardButton.addEventListener("click", () => openModal(profileAddModal));
+addCardButton.addEventListener("click", () => openModal(profileAddModal));
 closeAddModalBtn.addEventListener("click", () => closePopup(profileAddModal));
-closeModalBtn.addEventListener("click", () => closePopup(profileEditModal));
+profileCloseButton.addEventListener("click", () =>
+  closePopup(profileEditModal)
+);
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
