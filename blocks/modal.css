@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -14,8 +14,7 @@
 }
 
 .modal_opened {
-  display: flex;
-  opacity: 2;
+  opacity: 1;
   visibility: visible;
 }
 
@@ -116,7 +115,6 @@
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;
   max-width: 75vw;
   max-height: 75vh;
 }
